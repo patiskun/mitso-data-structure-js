@@ -27,12 +27,14 @@ module.exports = function removeKFromList(l, k) {
       if(previous=== null){
         head=l=l.next;
         continue;
-      } else {
+      } 
+      else {
         previous.next=l.next;
         l=l.next;
         continue;
       }
-    } else {
+    } 
+    else {
       previous = l;
       l=l.next;
     }
