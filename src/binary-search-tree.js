@@ -98,7 +98,8 @@ module.exports = class BinarySearchTree {
       } else if (data < node.data) {
         node.left = removeNode(node.left, data);
         return node;
-      } else {
+      } 
+      else {
         node.right = removeNode(node.right, data);
         return node;
       }
